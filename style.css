@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(./fonts/Norse-Bold.woff2) format('woff2'),
+        url(./fonts/Norse-Bold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --poster-text-color: white;
+    --form-text-color: black;
+    --heading-size: 25px;
+}
+body{ 
+    display: flex;
+    flex-direction: row;
+}
+
+.poster{
+    background-image: url("./images/stars.avif");
+    background-size: 100%;
+    color: var(--poster-text-color);
+    width: 40%;
+    height: initial;
+    position:relative;
+    top: -1vh;
+    left: -1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.poster>p{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(208, 255, 0, 0.082);
+    height: 15%;
+    position: relative;
+    top: 20vh; 
+    justify-content: center;
+    font-size: 70px;
+    font-family: Norse;
+}
+
+.notPoster{
+    position: relative;
+    top: -1vh;
+    left: -1vh;
+    margin-right: -1vw; 
+    
+}
+.heading{
+    background-color: rgb(235, 237, 255);
+    height: 33vh;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0px 0px 100px -25px ;
+}
+
+.heading>p{
+    font-weight: bold;
+    font-size: var(--heading-size);
+    width: 60%;
+    padding-left: 5%;
+}
+
+.formInput{
+    background-color: rgb(237, 239, 250);
+    height: 33vh; 
+}
+.foot{
+    background-color: rgb(235, 237, 255);
+    height: 33vh;
+    box-shadow: inset 0px 0px 100px -25px ;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-size: calc(var(--heading-size) - 10px);
+}
+
+button{
+    padding: 1% 3% 1% 3%;
+    border-radius:5px;
+    background-color: rgba(86, 129, 16, 0.562);
+    font-size: calc(var(--heading-size) - 10px);
+}
+
+button:hover{
+    background-color: rgb(7, 0, 66);
+    color:  white; 
+}
+
+.formInput>p{ 
+    margin-top: -1vh;
+    font-size: var(--heading-size);
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+
+form{
+    padding-left: 5%; 
+    display: flex;
+    flex-direction: row;
+    font-size: calc(var(--heading-size) - 5px);
+     
+   
+}
+
+.form2{
+    padding-left: 200px;
+}
+ 
+form>div>input{ 
+    display: flex;
+    flex-direction: column;
+    height: var(--heading-size);
+    width: 125%;
+    border-radius: 5px;
+}
+
+input[type="email"]:invalid{ 
+    background-color: rgba(172, 0, 0, 0.425);
+}
+input[type="tel"]:invalid{ 
+    background-color: rgba(136, 104, 104, 0.425);
+}
+
+
+ 
+ 
